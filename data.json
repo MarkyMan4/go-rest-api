@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title": "The Tommyknockers",
+        "author": "Stephen King",
+        "publicationYear": 1987,
+        "genre": "Science Fiction"
+    },
+    {
+        "id": 2,
+        "title": "Fahrenheit 451",
+        "author": "Ray Bradbury",
+        "publicationYear": 1953,
+        "genre": "Dystopian"
+    },
+    {
+        "id": 3,
+        "title": "Revival",
+        "author": "Stephen King",
+        "publicationYear": 2014,
+        "genre": "Horror"
+    },
+    {
+        "id": 4,
+        "title": "The Hellbound Heart",
+        "author": "Clive Barker",
+        "publicationYear": 1986,
+        "genre": "Horror"
+    },
+    {
+        "id": 5,
+        "title": "The Gunslinger",
+        "author": "Stephen King",
+        "publicationYear": 1982,
+        "genre": "Fantasy"
+    },
+    {
+        "id": 6,
+        "title": "Misery",
+        "author": "Stephen King",
+        "publicationYear": 1987,
+        "genre": "Horror"
+    }
+]
