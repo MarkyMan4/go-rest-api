@@ -15,14 +15,27 @@ type Book struct {
 	Genre           string `json:"genre"`
 }
 
-func HandleBooks(w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("Content-Type", "application/json")
-
+func ListBooks(w http.ResponseWriter) {
 	fileData, _ := os.ReadFile("data.json")
 	var books []Book
 	json.Unmarshal(fileData, &books)
 
 	json.NewEncoder(w).Encode(books)
+}
+
+func CreateBook(w http.ResponseWriter, r *http.Request) {
+
+}
+
+func HandleBooks(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/json")
+
+	switch r.Method {
+	case "GET":
+		ListBooks(w)
+	default:
+		w.Write([]byte("Method " + r.Method + " not allowed"))
+	}
 }
 
 func main() {
